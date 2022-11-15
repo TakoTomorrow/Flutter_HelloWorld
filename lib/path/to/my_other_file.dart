@@ -14,7 +14,6 @@ class Spacecraft {
   Spacecraft.unlaunched(String name) : this(name, null);
 
   void describe() {
-    print('Spacecraft: $name');
     // 因為 this.launchDate 被其他Property引用，因此類型無法晉升。
     var launchDate = this.launchDate;
 
